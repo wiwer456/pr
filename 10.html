@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+		}
+		.box2{
+			height: 200px;
+			width: 200px;
+			background-color: green;	
+		}
+		.box3{
+			height: 200px;
+			width: 200px;
+			background-color: yellow;	
+		}
+		.d-flex{
+			display: flex;
+			display: 		}
+	</style>
+</head>
+<body>
+	<div class="d-flex">
+		<div class="box1">
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+		<div class="box3">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.querySelector('.box1').onclick = function(){
+            alert('красный использован')  
+			document.querySelector('.box2').style.height = '300px'
+		}
+		document.querySelector('.box2').onclick = function(){
+			alert('зелёный использован')  
+			document.querySelector('.box3').style.height = '300px'
+		}
+		document.querySelector('.box3').onclick = function(){
+			alert('жёлтый использован')  
+			document.querySelector('.box1').style.height = '300px'
+		}
+	</script>
+</body>
+</html>
